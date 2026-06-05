@@ -115,8 +115,12 @@ ul.border li:last-child {
 }
 
 /* Box with text and image */
-.imageflex { display: flex; }
-.imageflexcontent { max-width: 20%; max-height: 200px; }
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: left;
+}
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
@@ -150,7 +154,7 @@ ul.border li:last-child {
 </ul></div>
   <div class="main">
     <h2>RESEARCH PROJECTS</h2>
-		<div class="imageflex">
+		<div class="flex-container">
 			<div>
 				<img src="AAF.png" alt="Speaker hearing their modified voice through 
 				headphones" width=80%>
@@ -170,7 +174,7 @@ ul.border li:last-child {
 			
 		</div>
 	<br>
-		<div class="imageflex">
+		<div class="flex-container">
 			<div>
 				<img src="model_fitting.png" alt="Speaker and with bidirectional arrows connecting 
 				a computer depicting a computational model with red question marks indicating 
@@ -193,7 +197,7 @@ ul.border li:last-child {
 			
 		</div>
 	<br>
-		<div class="imageflex">
+		<div class="flex-container">
 			<div>
 				<img src="constriction_locations.png" alt="Side profile of speaker with vocal tract 
 				shape outlined and wedges showing discrete constriction locations." width=80%>
