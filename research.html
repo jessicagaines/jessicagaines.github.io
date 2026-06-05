@@ -114,6 +114,10 @@ ul.border li:last-child {
   background: #ddd;
 }
 
+/* Box with text and image */
+.imageflex { display: flex; }
+.imageflexcontent { margin-left: 5px; margin-top: 0; }
+
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
   .row {   
@@ -146,7 +150,7 @@ ul.border li:last-child {
 </ul></div>
   <div class="main">
     <h2>RESEARCH PROJECTS</h2>
-		<div class="row">
+		<div class="imageflex">
 			<div>
 				<h4>Adaptation response to pitch shift during speech is 
 				attenuated upon relearning
@@ -164,7 +168,7 @@ ul.border li:last-child {
 			</div>
 		</div>
 	<br>
-		<div class="row">
+		<div class="imageflex">
 			<div>
 				<h4>Bayesian inference of state feedback control parameters 
 				for f<sub>o</sub> perturbation responses in cerebellar ataxia
@@ -186,7 +190,7 @@ ul.border li:last-child {
 			</div>
 		</div>
 	<br>
-		<div class="row">
+		<div class="imageflex">
 			<div>
 				<h4>Discrete constriction locations describe a 
 				comprehensive range of vocal tract shapes in the Maeda model
